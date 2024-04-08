@@ -2,21 +2,22 @@
 
 ## Grupo
 ### Integrantes
-* legajo - Apellido(s), Nombre(s)
+* 47850, Coronel Eghar Nahuel
+* 48194, Marincioni Alejandro
+* ,Dieguez Matias
 
 ### Repositorios
-* [frontend app](http://hyperlinkToGihubOrGitlab)
-* [backend app](http://hyperlinkToGihubOrGitlab)
-*Nota*: si utiliza un monorepo indicar un solo link con fullstack app.
+* [fullstack app](["link"](https://github.com/eghar2001/tp-desarrollo))
+
 
 ## Tema
 ### Descripción
-*2 a 6 líneas describiendo el negocio (menos es más)*
+SellNow es una plataforma de compraventa en línea que conecta a compradores y vendedores dentro de Argentina de manera rápida y sencilla. Permite a los usuarios publicar productos para la venta y buscar productos que deseen comprar dentro del país.
 
 ### Modelo
-![imagen del modelo]()
+![imagen del modelo](https://app.diagrams.net/#G1F-wYKdEiRRRPjhs1PMbIXb1Cld1Jq2yr#%7B%22pageId%22%3A%22-QJHrh1hych9j8nOmGhD%22%7D)
 
-*Nota*: incluir un link con la imagen de un modelo, puede ser modelo de dominio, diagrama de clases, DER. Si lo prefieren pueden utilizar diagramas con [Mermaid](https://mermaid.js.org) en lugar de imágenes.
+
 
 ## Alcance Funcional 
 
@@ -27,17 +28,17 @@
 Regularidad:
 |Req|Detalle|
 |:-|:-|
-|CRUD simple|1. CRUD Tipo Habitacion<br>2. CRUD Servicio<br>3. CRUD Localidad|
-|CRUD dependiente|1. CRUD Habitación {depende de} CRUD Tipo Habitacion<br>2. CRUD Cliente {depende de} CRUD Localidad|
-|Listado<br>+<br>detalle| 1. Listado de habitaciones filtrado por tipo de habitación, muestra nro y tipo de habitación => detalle CRUD Habitacion<br> 2. Listado de reservas filtrado por rango de fecha, muestra nro de habitación, fecha inicio y fin estadía, estado y nombre del cliente => detalle muestra datos completos de la reserva y del cliente|
-|CUU/Epic|1. Reservar una habitación para la estadía<br>2. Realizar el check-in de una reserva|
+|CRUD simple|1. CRUD Usuario<br>2.CRUD costeEnvio 3.CRUD Categoria|
+|CRUD dependiente|1. CRUD Compra {depende de} CRUD Usuario <br>3.CRUD publicacion{depende de} CRUD usuario y CRUD categoria |
+|Listado<br>+<br>detalle| 1. Listado de compras  de un usuario filtrado por fecha de compra, muestra fecha de compra monto<br> 2. Listado de publicaciones filtrado por categoría , por nombre, por precio|
+|CUU/Epic|1.Publicación de Producto<br>2. Compra de Producto|
 
 
 Adicionales para Aprobación
 |Req|Detalle|
 |:-|:-|
-|CRUD |1. CRUD Tipo Habitacion<br>2. CRUD Servicio<br>3. CRUD Localidad<br>4. CRUD Provincia<br>5. CRUD Habitación<br>6. CRUD Empleado<br>7. CRUD Cliente|
-|CUU/Epic|1. Reservar una habitación para la estadía<br>2. Realizar el check-in de una reserva<br>3. Realizar el check-out y facturación de estadía y servicios|
+|CRUD |1. CRUD CosteEnvio<br>2. CRUD Localidad<br>3.CRUD Pregunta <br>|
+|CUU/Epic|1.Carga de las Localidades <br>2.Creación de Pregunta por el Usuario<br>3. |
 
 
 ### Alcance Adicional Voluntario
